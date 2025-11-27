@@ -1413,7 +1413,15 @@
 
         
         
-
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "68d7685f-1999-41f1-a892-b8788e740d4d",
+    });
+  });
+</script>
         
 
     </head>
